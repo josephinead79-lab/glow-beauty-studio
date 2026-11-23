@@ -1,0 +1,217 @@
+
+/* General website styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #b8860b;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b8860b;
+}
+
+/* Home section */
+#home {
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #f5e6d8;
+}
+
+#home h1 {
+    font-size: 45px;
+    color: #8b5e3c;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#home a,
+#contact a {
+    display: inline-block;
+    background-color: #b8860b;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Services section */
+#services {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+#services h2,
+#about h2,
+#contact h2 {
+    color: #8b5e3c;
+    margin-bottom: 25px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background-color: white;
+    padding: 30px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* About section */
+#about {
+    background-color: #f5e6d8;
+    padding: 70px 12%;
+    text-align: center;
+}
+
+/* Contact section */
+#contact {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #8b5e3c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile phone layout */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+}
+
+.hero-image {
+    width: 80%;
+    max-width: 650px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Beauty Services Section */
+#services {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    color: #8b5e3c;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.service {
+    background-color: #fffaf5;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(139, 94, 60, 0.12);
+    border: 1px solid #f0dfca;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    color: #b8860b;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.service p {
+    color: #6b5545;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Service Images */
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: block;
+}
