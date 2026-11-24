@@ -215,3 +215,139 @@ footer {
     margin-bottom: 15px;
     display: block;
 }
+
+/* BOOKING SECTION */
+#booking {
+    padding: 90px 20px;
+    background-color: #f8f1e9;
+    text-align: center;
+}
+
+.booking-heading {
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.booking-heading span {
+    color: #b8860b;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.booking-heading h2 {
+    color: #5c4033;
+    font-size: 34px;
+    margin: 15px 0;
+}
+
+.booking-heading p {
+    color: #766354;
+    line-height: 1.7;
+}
+
+.booking-form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fffdf9;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(92, 64, 51, 0.12);
+    text-align: left;
+    border: 1px solid #ead9c5;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    color: #5c4033;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dfcdb9;
+    border-radius: 10px;
+    background-color: #fffaf5;
+    font-size: 15px;
+    color: #5c4033;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #b8860b;
+    box-shadow: 0 0 5px rgba(184, 134, 11, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.booking-button {
+    width: 100%;
+    padding: 16px;
+    background-color: #b8860b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+    background-color: #8b6508;
+}
+
+.booking-note {
+    text-align: center;
+    color: #8b735e;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .booking-form {
+        padding: 25px 18px;
+    }
+
+    .booking-heading h2 {
+        font-size: 27px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+
+/* BOOKING SUCCESS MESSAGE */
+.booking-success {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #f3eadc;
+    color: #5c4033;
+    border: 1px solid #d6b66c;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 600;
+}
