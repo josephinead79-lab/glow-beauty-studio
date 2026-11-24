@@ -88,6 +88,73 @@
         </p>
     </section>
 
+<!-- Booking Section -->
+<section id="booking">
+    <div class="booking-heading">
+        <span>BOOK WITH US</span>
+        <h2>Book Your Beauty Appointment</h2>
+        <p>
+            Your beauty deserves special attention.
+            Choose your service and let us take care of the rest.
+        </p>
+    </div>
+
+    <form class="booking-form">
+
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name"
+                placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone / WhatsApp Number</label>
+            <input type="tel" id="phone"
+                placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="service">Choose Your Service</label>
+            <select id="service" required>
+                <option value="">Select a service</option>
+                <option>Makeup</option>
+                <option>Nail Care</option>
+                <option>Facials</option>
+                <option>Lash Extensions</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Additional Notes</label>
+            <textarea id="message"
+                placeholder="Tell us anything we should know..."
+                rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="booking-button">
+            Request Appointment
+        </button>
+
+        <p class="booking-note">
+            We look forward to making you feel beautiful!
+        </p>
+
+<p id="booking-success" class="booking-success" hidden></p>
+    </form>
+</section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Ready for your beauty transformation?</p>
@@ -97,6 +164,6 @@
     <footer>
         <p>&copy; 2026 Glow Beauty Studio. All rights reserved.</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
