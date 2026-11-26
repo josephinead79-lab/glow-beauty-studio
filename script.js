@@ -1,3 +1,4 @@
+
 const bookingForm = document.querySelector(".booking-form");
 const successMessage = document.getElementById("booking-success");
 
@@ -8,10 +9,7 @@ bookingForm.addEventListener("submit", function(event) {
     const selectedService = document.getElementById("service").value;
 
     successMessage.textContent =
-        "Thank you, " + customerName +
-        "! Your " + selectedService +
-        " appointment request has been received. " +
-        "Glow Beauty Studio looks forward to welcoming you!";
+    `Thank you, ${customerName}! You selected ${selectedService}. This is a demonstration form, so your appointment has not been sent or booked.`;
 
     successMessage.hidden = false;
 
