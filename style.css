@@ -603,3 +603,9 @@ footer {
     object-position: center center;
 }
 
+.demo-note {
+    text-align: center;
+    color: #c5a059;
+    font-size: 12px;
+    margin-top: 20px;
+}
